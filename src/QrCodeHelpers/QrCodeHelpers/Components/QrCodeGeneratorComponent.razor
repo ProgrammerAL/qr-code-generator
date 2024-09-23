@@ -1,0 +1,25 @@
+﻿
+<div class="flex flex-col gap-2">
+    <div class="flex">
+        <input type="text"
+               class="w-full border border-gray-300 rounded-md p-2"
+               @bind-value="QrCodeText"
+               @bind-value:event="oninput" />
+        <button class="bg-blue-500 text-white p-2 rounded-md"
+                @onclick="GenerateQrCodeAsync">
+            Generate
+        </button>
+    </div>
+
+    @if (State == ComponentStateType.GeneratingQrCode)
+    {
+        <div>
+            <GreenSpinnerComponent TailwindCssHeightClass="h-12" TailwindCssWidthClass="w-12" />
+        </div>
+    }
+    else
+    {
+        <img src="@QrCodeImageUrl"
+             class="h-12 w-12" />
+    }
+</div>

@@ -1,0 +1,3 @@
+name: svghelpers-site
+runtime: dotnet
+description: Manages cloud services for running SvgHelpers.com

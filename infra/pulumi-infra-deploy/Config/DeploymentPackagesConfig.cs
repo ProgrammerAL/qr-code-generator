@@ -9,6 +9,6 @@ namespace ProgrammerAl.qrcodehelpers.IaC.Config;
 
 public record DeploymentPackagesConfig(string UnzippedArtifactsDir)
 {
-    public string WebsitePath => $"{UnzippedArtifactsDir}/svg-helpers-site";
+    public string WebsitePath => $"{UnzippedArtifactsDir}/qrcode-helpers-site";
 }
 

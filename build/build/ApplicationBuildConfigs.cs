@@ -23,14 +23,14 @@ public record WebsitePaths(
 {
     public static WebsitePaths LoadFromContext(ICakeContext context, string buildConfiguration, string srcDirectory, string buildArtifactsPath)
     {
-        var projectName = "SvgHelpers";
+        var projectName = "QrCodeHelpers";
         srcDirectory += $"/{projectName}";
         var pathToSln = srcDirectory + $"/{projectName}.sln";
         var functionProjectDir = srcDirectory + $"/{projectName}";
         var functionCsprojFile = functionProjectDir + $"/{projectName}.csproj";
         var outDir = functionProjectDir + $"/bin/{buildConfiguration}/cake-build-output";
         var zipOutDir = buildArtifactsPath;
-        var zipOutFilePath = zipOutDir + $"/svg-helpers-site.zip";
+        var zipOutFilePath = zipOutDir + $"/qrcode-helpers-site.zip";
         var unitTestDirectory = srcDirectory + $"/UnitTests";
         var unitTestProj = unitTestDirectory + $"/UnitTests.csproj";
         var coverletOutDir = unitTestDirectory + $"/coverlet-coverage-results/";

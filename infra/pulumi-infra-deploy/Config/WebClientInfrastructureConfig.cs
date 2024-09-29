@@ -2,7 +2,7 @@
 using System;
 
 
-namespace ProgrammerAl.SvgHelpers.IaC.Config;
+namespace ProgrammerAl.qrcodehelpers.IaC.Config;
 
 public record WebClientInfrastructureConfig(
     string RootDomain,

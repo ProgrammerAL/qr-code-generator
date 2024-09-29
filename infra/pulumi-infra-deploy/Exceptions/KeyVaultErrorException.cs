@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgrammerAl.SvgHelpers.IaC.Exceptions;
+namespace ProgrammerAl.qrcodehelpers.IaC.Exceptions;
 
 public class KeyVaultErrorException : Exception
 {

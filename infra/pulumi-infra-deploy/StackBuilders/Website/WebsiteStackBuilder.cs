@@ -9,12 +9,12 @@ using System.Text.Json;
 
 using Cloudflare = Pulumi.Cloudflare;
 
-using static ProgrammerAl.SvgHelpers.IaC.StackBuilders.Website.WebsiteInfrastructure;
+using static ProgrammerAl.qrcodehelpers.IaC.StackBuilders.Website.WebsiteInfrastructure;
 using Pulumi.Command.Local;
 using System.Linq;
-using ProgrammerAl.SvgHelpers.IaC.StackBuilders.Website;
-using ProgrammerAl.SvgHelpers.IaC.Utilities;
-using ProgrammerAl.SvgHelpers.IaC.Config.GlobalConfigs;
+using ProgrammerAl.qrcodehelpers.IaC.StackBuilders.Website;
+using ProgrammerAl.qrcodehelpers.IaC.Utilities;
+using ProgrammerAl.qrcodehelpers.IaC.Config.GlobalConfigs;
 
 public record WebsiteStackBuilder(GlobalConfig GlobalConfig)
 {
@@ -33,7 +33,7 @@ public record WebsiteStackBuilder(GlobalConfig GlobalConfig)
     private CloudflarePagesApp UploadWebClientFiles(
         Cloudflare.Provider provider)
     {
-        var projectName = $"svghelpers-site-prod";
+        var projectName = $"qrcode-helpers-site-prod";
         var pagesApp = new Cloudflare.PagesProject(projectName, new Cloudflare.PagesProjectArgs
         {
             Name = projectName,
@@ -127,7 +127,7 @@ public record WebsiteStackBuilder(GlobalConfig GlobalConfig)
 
         pagesDomainEndpoint = pagesDomainEndpoint.ToLower();
 
-        var pagesDomain = new Cloudflare.PagesDomain("svghelpers-site-pages-domain", new()
+        var pagesDomain = new Cloudflare.PagesDomain("qrcode-helpers-site-pages-domain", new()
         {
             AccountId = GlobalConfig.CloudflareConfig.AccountId,
             Domain = pagesDomainEndpoint,
@@ -139,7 +139,7 @@ public record WebsiteStackBuilder(GlobalConfig GlobalConfig)
 
         var record = new Cloudflare.Record("website-cname", new Cloudflare.RecordArgs
         {
-            Name = "svghelpers",
+            Name = "qrcodehelpers",
             Content = webClientInfra.PagesProject.Domains.Apply(x => x.First()),
             ZoneId = GlobalConfig.WebClientInfraConfig.CloudflareZoneId,
             Proxied = true,

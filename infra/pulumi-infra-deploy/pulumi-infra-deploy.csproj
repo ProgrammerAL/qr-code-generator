@@ -6,7 +6,7 @@
 		<LangVersion>11</LangVersion>
 		<Nullable>enable</Nullable>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-		<RootNamespace>ProgrammerAl.SvgHelpers.IaC</RootNamespace>
+		<RootNamespace>ProgrammerAl.qrcodehelpers.IaC</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>

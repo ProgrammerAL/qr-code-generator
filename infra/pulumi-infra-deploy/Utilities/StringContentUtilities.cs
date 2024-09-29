@@ -9,7 +9,7 @@ using System.IO.Compression;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 
-namespace ProgrammerAl.SvgHelpers.IaC.Utilities;
+namespace ProgrammerAl.qrcodehelpers.IaC.Utilities;
 
 public record CompressedStringContent(
     string Content,

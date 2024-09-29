@@ -1,10 +1,10 @@
 config:
-  svghelpers-site:unzipped-artifacts-dir: local
-  svghelpers-site:secrets-key-vault-url: https://svghelpers-deploy-kv.vault.azure.net/
-  svghelpers-site:cloudflare-account-id: 25a96b543306c9c9b27e5e04ff7b00b6
-  svghelpers-site:root-run-path: local
-  svghelpers-site:web-client-infra:
+  qrcode-helpers-site:unzipped-artifacts-dir: local
+  qrcode-helpers-site:secrets-key-vault-url: https://qrcodehelpers-deploy-kv.vault.azure.net/
+  qrcode-helpers-site:cloudflare-account-id: 25a96b543306c9c9b27e5e04ff7b00b6
+  qrcode-helpers-site:root-run-path: local
+  qrcode-helpers-site:web-client-infra:
     RootDomain: programmeral.com
-    Subdomain: svghelpers
+    Subdomain: qrcodehelpers
     CloudflareZoneId: cb6b4ef0a57ef72147e4c9bf3c16b532
   pulumi:template: azure-csharp

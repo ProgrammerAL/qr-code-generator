@@ -1,8 +1,8 @@
 ﻿using Pulumi;
 
-using static ProgrammerAl.SvgHelpers.IaC.StackBuilders.Website.WebsiteInfrastructure;
+using static ProgrammerAl.qrcodehelpers.IaC.StackBuilders.Website.WebsiteInfrastructure;
 
-namespace ProgrammerAl.SvgHelpers.IaC.StackBuilders.Website;
+namespace ProgrammerAl.qrcodehelpers.IaC.StackBuilders.Website;
 
 public record WebsiteInfrastructure(
     CloudflarePagesApp WebApp,

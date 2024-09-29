@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgrammerAl.SvgHelpers.IaC.Config;
+namespace ProgrammerAl.qrcodehelpers.IaC.Config;
 
 public record DeploymentPackagesConfig(string UnzippedArtifactsDir)
 {

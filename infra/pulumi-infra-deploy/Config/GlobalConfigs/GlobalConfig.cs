@@ -1,4 +1,4 @@
-﻿using ProgrammerAl.SvgHelpers.IaC.Utilities;
+﻿using ProgrammerAl.qrcodehelpers.IaC.Utilities;
 
 using Pulumi;
 
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgrammerAl.SvgHelpers.IaC.Config.GlobalConfigs;
+namespace ProgrammerAl.qrcodehelpers.IaC.Config.GlobalConfigs;
 
 public record GlobalConfig(
     DeploymentPackagesConfig DeploymentPackagesConfig,

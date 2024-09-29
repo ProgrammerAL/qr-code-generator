@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using System.Linq;
 
 using System.Collections.Generic;
-using ProgrammerAl.SvgHelpers.IaC.StackBuilders.Website;
-using ProgrammerAl.SvgHelpers.IaC.Config.GlobalConfigs;
+using ProgrammerAl.qrcodehelpers.IaC.StackBuilders.Website;
+using ProgrammerAl.qrcodehelpers.IaC.Config.GlobalConfigs;
 
 return await Pulumi.Deployment.RunAsync(async () =>
 {

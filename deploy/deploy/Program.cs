@@ -59,7 +59,7 @@ public sealed class UnzipAssetsTask : FrostingTask<BuildContext>
     {
         _ = Directory.CreateDirectory(context.UnzippedArtifactsDir);
 
-        ExtractArchive("svg-helpers-site", context);
+        ExtractArchive("qrcode-helpers-site", context);
     }
 
     private void ExtractArchive(string zipName, BuildContext context)
@@ -84,8 +84,8 @@ public sealed class UpdatePulumiConfigTask : FrostingTask<BuildContext>
         var configFilePath = $"{context.PulumiPath}/Pulumi.{context.PulumiStackName}.yaml";
         var configFileText = File.ReadAllText(configFilePath);
 
-        configFileText = UpdateConfigValue("svghelpers-site:unzipped-artifacts-dir: ", context.UnzippedArtifactsDir, configFileText);
-        configFileText = UpdateConfigValue("svghelpers-site:root-run-path: ", context.WorkspacePath, configFileText);
+        configFileText = UpdateConfigValue("qrcode-helpers-site:unzipped-artifacts-dir: ", context.UnzippedArtifactsDir, configFileText);
+        configFileText = UpdateConfigValue("qrcode-helpers-site:root-run-path: ", context.WorkspacePath, configFileText);
 
         File.WriteAllText(configFilePath, configFileText);
         context.Log.Information("Pulumi Config: \n" + configFileText);

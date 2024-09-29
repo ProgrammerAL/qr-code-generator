@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgrammerAl.SvgHelpers.IaC.Utilities;
+namespace ProgrammerAl.qrcodehelpers.IaC.Utilities;
 
 public static class CloudflareUtilities
 {

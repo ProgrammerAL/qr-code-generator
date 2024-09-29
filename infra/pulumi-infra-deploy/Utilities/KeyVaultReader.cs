@@ -4,7 +4,7 @@ using Azure.Security.KeyVault.Secrets;
 
 using Microsoft.Extensions.Azure;
 
-using ProgrammerAl.SvgHelpers.IaC.Exceptions;
+using ProgrammerAl.qrcodehelpers.IaC.Exceptions;
 
 using Pulumi;
 
@@ -14,7 +14,7 @@ using System.Collections.Immutable;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ProgrammerAl.SvgHelpers.IaC.Utilities;
+namespace ProgrammerAl.qrcodehelpers.IaC.Utilities;
 
 public class KeyVaultReader
 {

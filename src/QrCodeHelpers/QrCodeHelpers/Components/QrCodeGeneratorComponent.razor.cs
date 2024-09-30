@@ -27,7 +27,7 @@ public partial class QrCodeGeneratorComponent
             var base64EncodedImage = graphic.GetGraphic(
                 pixelsPerModule: 50,
                 darkColor: Color.Black,
-                lightColor: Color.Transparent,
+                lightColor: Color.White,
                 drawQuietZones: false,
                 imgType: Base64QRCode.ImageType.Png);
 

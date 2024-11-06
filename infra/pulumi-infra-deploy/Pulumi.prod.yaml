@@ -5,6 +5,6 @@ config:
   qrcode-helpers-site:root-run-path: local
   qrcode-helpers-site:web-client-infra:
     RootDomain: programmeral.com
-    Subdomain: qrcodehelpers
+    Subdomain: qr-code-utils
     CloudflareZoneId: cb6b4ef0a57ef72147e4c9bf3c16b532
   pulumi:template: azure-csharp
